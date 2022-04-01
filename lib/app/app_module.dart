@@ -13,7 +13,7 @@ class AppModule extends Module {
   final List<Bind> binds = [
     Bind((i) => ForecastRepository(i.get())),
     Bind((i) => BlocForecastBloc(i.get())),
-    Bind((i) => ForecastStore()),
+    Bind((i) => ForecastStore(i.get())),
     Bind((i) => Dio(BaseOptions(baseUrl: 'https://goweather.herokuapp.com'))),
   ];
 
