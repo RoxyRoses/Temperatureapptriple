@@ -1,4 +1,3 @@
-
 class ForecastsModel{
   String? temperature;
   String? wind;
